@@ -1,0 +1,19 @@
+name: Install atget
+description: Install atget
+inputs:
+  version:
+    description: atget version
+    default: 0.1.0
+    required: false
+runs:
+  using: composite
+  steps:
+    - shell: bash -xe {0}
+      run: |
+        mkdir -p $RUNNER_TOOL_CACHE/atget
+        cd $RUNNER_TOOL_CACHE/atget
+        VERSION=${{ inputs.version }}
+        DOWNLOAD_URL=https://github.com/winebarrel/atget/releases/download/v$VERSION/atget_${VERSION}_linux_amd64.tar.gz
+        curl -sSfL $DOWNLOAD_URL | tar zx atget
+        echo $RUNNER_TOOL_CACHE/atget >> $GITHUB_PATH
+        $RUNNER_TOOL_CACHE/atget --version
