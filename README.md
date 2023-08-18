@@ -18,7 +18,7 @@ Flags:
       --version
 ```
 
-```
+```sh
 $ atget -b company -t employees '{email}="scott@example.com"'
 {"first_name":"scott","last_name":"tiger","email":"scott@example.com"}
 ```
