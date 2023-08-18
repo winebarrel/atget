@@ -16,4 +16,4 @@ runs:
         DOWNLOAD_URL=https://github.com/winebarrel/atget/releases/download/v$VERSION/atget_${VERSION}_linux_amd64.tar.gz
         curl -sSfL $DOWNLOAD_URL | tar zx atget
         echo $RUNNER_TOOL_CACHE/atget >> $GITHUB_PATH
-        $RUNNER_TOOL_CACHE/atget --version
+        $RUNNER_TOOL_CACHE/atget/atget --version
