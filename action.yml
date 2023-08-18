@@ -8,9 +8,8 @@ inputs:
 runs:
   using: composite
   steps:
-    - shell: bash
+    - shell: bash -xe {0}
       run: |
-        set -e
         mkdir -p $RUNNER_TOOL_CACHE/atget
         cd $RUNNER_TOOL_CACHE/atget
         VERSION=${{ inputs.version }}
