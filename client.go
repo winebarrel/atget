@@ -1,7 +1,6 @@
 package atget
 
 import (
-	"errors"
 	"fmt"
 
 	"github.com/mehanizm/airtable"
@@ -36,13 +35,13 @@ func (client *Client) GetRecords(baseName string, tableName string, filter strin
 	}
 
 	if base == nil {
-		return nil, errors.New(fmt.Sprintf("base '%s' not found", baseName))
+		return nil, fmt.Errorf("base '%s' not found", baseName)
 	}
 
 	table := client.airtable.GetTable(base.ID, tableName)
 
 	if table == nil {
-		return nil, errors.New(fmt.Sprintf("table '%s' not found", tableName))
+		return nil, fmt.Errorf("table '%s' not found", tableName)
 	}
 
 	records, err := table.GetRecords().WithFilterFormula(filter).Do()
