@@ -3,5 +3,7 @@ github.com/alecthomas/kong v1.6.1 h1:/7bVimARU3uxPD0hbryPE8qWrS3Oz3kPQoxA/H2NKG8
 github.com/alecthomas/kong v1.6.1/go.mod h1:p2vqieVMeTAnaC83txKtXe8FLke2X07aruPWXyMPQrU=
 github.com/alecthomas/repr v0.4.0 h1:GhI2A8MACjfegCPVq9f1FLvIBS+DrQ2KQBFZP1iFzXc=
 github.com/hexops/gotextdiff v1.0.3 h1:gitA9+qJrrTCsiCl7+kh75nPqQt1cx4ZkudSTLoUqJM=
-github.com/mehanizm/airtable v0.3.1 h1:PyuSukkZScm9/onHqJWA1/kscDjp/3c0ANsQiCdJTws=
-github.com/mehanizm/airtable v0.3.1/go.mod h1:0wD9HInozzelKMw8XiY6czjsDygmAg1bzxSqAha/WLg=
+github.com/mehanizm/airtable v0.3.3 h1:k3lMqESb8F2kRYenrPIN5qdGi45ws5eU2sdm2SJurvw=
+github.com/mehanizm/airtable v0.3.3/go.mod h1:ucwKW2iPJoEK9dIL7ueCaDdjClpG6pplAOGabgJtoLg=
+golang.org/x/time v0.8.0 h1:9i3RxcPv3PZnitoVGMPDKZSq1xW1gK1Xy3ArNOGZfEg=
+golang.org/x/time v0.8.0/go.mod h1:3BpzKBy/shNhVucY/MWOyx10tF3SFh9QdLuxbVysPQM=
