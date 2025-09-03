@@ -2,7 +2,7 @@ module github.com/winebarrel/atget
 
 go 1.23
 
-toolchain go1.25.0
+toolchain go1.25.1
 
 require github.com/alecthomas/kong v1.12.1
 
