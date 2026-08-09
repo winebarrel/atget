@@ -4,7 +4,7 @@ go 1.23
 
 toolchain go1.26.5
 
-require github.com/alecthomas/kong v1.16.0
+require github.com/alecthomas/kong v1.16.1
 
 require github.com/mehanizm/airtable v0.3.4
 
